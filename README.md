@@ -1,5 +1,7 @@
 # FastNoise
 
+This is the Java version of [FastNoise](https://github.com/Auburns/FastNoise)
+
 FastNoise is an open source noise generation library with a large collection of different noise algorithms. This library has been designed for realtime usage from the ground up, so has been optimised for speed without sacrificing noise quality.
 
 This project started when my search to find a good noise library for procedural terrain generation concluded without an obvious choice. I enjoyed the options and customisation of Accidental Noise Library and the speed of LibNoise, so many of the techniques from these libraries and the knowledge I gained from reading through their source has gone into creating FastNoise.
@@ -39,6 +41,8 @@ Download links can be found in the [Releases Section](https://github.com/Auburns
 
 
 # Performance Comparisons
+Benchmarking done on C++ version.
+
 Using default noise settings on FastNoise and matching those settings across the other libraries where possible.
 
 Timings below are x1000 ns to generate 32x32x32 points of noise on a single thread.
@@ -80,6 +84,5 @@ Comparision of fractal performance [here](https://github.com/Auburns/FastNoiseSI
 ![Gradient Perturb](http://i.imgur.com/ui045Bk.png)
 
 ![Gradient Perturb](http://i.imgur.com/JICFypT.png)
-
 
 # Any suggestions or questions welcome
