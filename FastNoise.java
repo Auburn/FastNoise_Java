@@ -26,7 +26,7 @@
 // off every 'zix'.)
 //
 
-package org.schema.game.server.controller.world.factory.planet;
+package fastnoise;
 
 import javax.vecmath.Vector2f;
 import javax.vecmath.Vector3f;
