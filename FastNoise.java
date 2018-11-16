@@ -2192,7 +2192,7 @@ public class FastNoise {
         v2.y += Lerp(ly0x, ly1x, ys) * perturbAmp;
     }
 
-    private class Vector2f {
+    public static class Vector2f {
         float x;
         float y;
 
@@ -2202,7 +2202,7 @@ public class FastNoise {
         }
     }
 
-    private class Vector3f {
+    public static class Vector3f {
         float x;
         float y;
         float z;
