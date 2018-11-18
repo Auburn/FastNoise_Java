@@ -30,17 +30,6 @@ package fastnoise;
 
 public class FastNoise {
 
-	private class Vector2f {
-		float x;
-		float y;
-	}
-
-	private class Vector3f {
-		float x;
-		float y;
-		float z;
-	}
-
 	public enum NoiseType {Value, ValueFractal, Perlin, PerlinFractal, Simplex, SimplexFractal, Cellular, WhiteNoise, Cubic, CubicFractal}
 	public enum Interp {Linear, Hermite, Quintic}
 	public enum FractalType {FBM, Billow, RigidMulti}
