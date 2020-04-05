@@ -1299,9 +1299,13 @@ public class FastNoise {
 	public float GetSimplex(float x, float y) {
 		return SingleSimplex(m_seed, x * m_frequency, y * m_frequency);
 	}
-
-	private final static float F2 = (float) (1.0 / 2.0);
-	private final static float G2 = (float) (1.0 / 4.0);
+	
+	//private final static float F2 = (float) (1.0 / 2.0);
+	//private final static float G2 = (float) (1.0 / 4.0);
+	
+	private final static float SQRT3 = (float) 1.7320508075688772935274463415059;
+	private final static float F2 = 0.5f * (SQRT3 - 1.0f);
+	private final static float G2 = (3.0f - SQRT3) / 6.0f;
 
 	private float SingleSimplex(int seed, float x, float y) {
 		float t = (x + y) * F2;
@@ -1326,8 +1330,8 @@ public class FastNoise {
 
 		float x1 = x0 - i1 + G2;
 		float y1 = y0 - j1 + G2;
-		float x2 = x0 - 1 + F2;
-		float y2 = y0 - 1 + F2;
+		float x2 = x0 - 1 + 2*G2;
+		float y2 = y0 - 1 + 2*G2;
 
 		float n0, n1, n2;
 
